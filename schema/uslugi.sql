@@ -1,0 +1,6 @@
+
+CREATE TABLE Uslugi (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nazwa VARCHAR(100),
+    cena DECIMAL(10,2)
+);
