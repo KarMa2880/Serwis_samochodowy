@@ -1,7 +1,7 @@
 ## Serwis_samochodowy
 Baza danych serwisu samochodowego w SQL
 
-Projekt Edukacyjny z Technologii informatycznych nz AiR R.1
+Projekt Edukacyjny z Technologii informatycznych na AiR R.1
 
 
 Projekt bazy danych dla serwisu samochodowego.  
