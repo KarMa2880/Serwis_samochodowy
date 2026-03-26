@@ -17,6 +17,10 @@ Zawiera schematy tabel, migracje oraz przykładowe dane testowe.
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/KarMa2880/Serwis_samochodowy.git
+
+2. Wprowadź/dodaj zmiany na swoim branch
+3. Utwórz pull request
+4. Po sprawdzeniu zmian i akceptacji zespołu, wykonaj merge do Main branch
 	
 
 ## Autorzy  / współtwórcy
