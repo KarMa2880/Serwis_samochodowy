@@ -1,0 +1,19 @@
+SELECT 
+    k.id_klienta,
+    k.imie,
+    k.nazwisko,
+    u.id_uslugi,
+    u.nazwa AS nazwa_uslugi,
+    COUNT(*) AS liczba_wykonan
+FROM klienci k
+JOIN wizyty w 
+    ON k.id_klienta = w.id_klienta
+JOIN wizyty_uslugi wu 
+    ON w.id_wizyty = wu.id_wizyty
+JOIN uslugi u 
+    ON wu.id_uslugi = u.id_uslugi
+GROUP BY 
+    k.id_klienta,
+    u.id_uslugi
+HAVING COUNT(*) > 1
+ORDER BY liczba_wykonan DESC;

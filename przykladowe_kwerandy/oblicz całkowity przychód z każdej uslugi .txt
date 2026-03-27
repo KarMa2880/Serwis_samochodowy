@@ -1,0 +1,11 @@
+SELECT 
+    u.id_uslugi,
+    u.nazwa AS nazwa_uslugi,
+    u.cena AS cena_jednostkowa,
+    COUNT(wu.id_uslugi) AS liczba_wykonan,
+    (u.cena * COUNT(wu.id_uslugi)) AS przychod_calkowity
+FROM uslugi u
+LEFT JOIN wizyty_uslugi wu 
+    ON u.id_uslugi = wu.id_uslugi
+GROUP BY u.id_uslugi, u.nazwa, u.cena
+ORDER BY przychod_calkowity DESC;

@@ -1,0 +1,10 @@
+SELECT 
+    w.id_wizyty,
+    w.data_wizyty,
+    w.opis
+FROM wizyty w
+JOIN klienci k 
+    ON w.id_klienta = k.id_klienta
+WHERE k.imie = 'Magdalena'
+  AND k.nazwisko = 'Krawczyk'
+ORDER BY w.data_wizyty;
